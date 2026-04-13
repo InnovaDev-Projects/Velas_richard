@@ -3,16 +3,16 @@ import logo from "./assets/velas_richard.png";
 
 /* ─── BRAND TOKENS ─── */
 const C = {
-  yellow: "#FEC329",          // primary background / accent
-  yellowLight: "#FED45A",          // hover / lighter yellow
-  yellowPale: "#FFF8E1",          // very light yellow for alt sections
-  yellowDark: "#E6AD1A",          // darker yellow for depth
-  red: "#420C0A",          // titles, icons, strong contrast
-  redLight: "#6B1512",          // secondary red
-  white: "#FFFFFF",          // card surfaces
-  ink: "#1A0A09",          // body text (warm black)
-  muted: "#7A5C1E",          // muted text on yellow bg
-  border: "rgba(66,12,10,.15)", // card borders
+  yellow: "#FEC329",
+  yellowLight: "#FED45A",
+  yellowPale: "#FFF8E1",
+  yellowDark: "#E6AD1A",
+  red: "#420C0A",
+  redLight: "#6B1512",
+  white: "#FFFFFF",
+  ink: "#1A0A09",
+  muted: "#7A5C1E",
+  border: "rgba(66,12,10,.15)",
   borderStrong: "rgba(66,12,10,.25)",
 };
 
@@ -63,34 +63,17 @@ const Icon = {
       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
     </svg>
   ),
-  Candle: ({ size = 26 }) => (
-    <svg width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-      <rect x="9" y="9" width="6" height="12" rx="1" /><path d="M12 9V5" /><ellipse cx="12" cy="5" rx="1.5" ry="2" fill="currentColor" opacity="0.4" />
-    </svg>
-  ),
   Package: ({ size = 26 }) => (
     <svg width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-      <path d="M16.5 9.4l-9-5.19M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" />
+      <path d="M16.5 9.4l-9-5.19M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+      <polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" />
     </svg>
   ),
   Sparkles: ({ size = 26 }) => (
     <svg width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-      <path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5z" /><path d="M5 3l.75 2.25L8 6l-2.25.75L5 9l-.75-2.25L2 6l2.25-.75z" /><path d="M19 15l.75 2.25L22 18l-2.25.75L19 21l-.75-2.25L16 18l2.25-.75z" />
-    </svg>
-  ),
-  Leaf: ({ size = 26 }) => (
-    <svg width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-      <path d="M17 8C8 10 5.9 16.17 3.82 19.5c1.8-1.17 3.68-1.83 5.68-1.5C11 15 13.5 12 17 8z" /><path d="M3.82 19.5c2-2.5 3.5-3.5 6.18-3" />
-    </svg>
-  ),
-  Gift: ({ size = 26 }) => (
-    <svg width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-      <polyline points="20 12 20 22 4 22 4 12" /><rect x="2" y="7" width="20" height="5" /><line x1="12" y1="22" x2="12" y2="7" /><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z" /><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" />
-    </svg>
-  ),
-  Droplets: ({ size = 26 }) => (
-    <svg width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-      <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z" /><path d="M12.56 6.6A10.97 10.97 0 0014 3.02c.5 3.01 4 4.97 4 8.02a4 4 0 01-7.14 2.47" />
+      <path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5z" />
+      <path d="M5 3l.75 2.25L8 6l-2.25.75L5 9l-.75-2.25L2 6l2.25-.75z" />
+      <path d="M19 15l.75 2.25L22 18l-2.25.75L19 21l-.75-2.25L16 18l2.25-.75z" />
     </svg>
   ),
   Phone: ({ size = 16 }) => (
@@ -108,12 +91,42 @@ const Icon = {
       <polyline points="20 6 9 17 4 12" />
     </svg>
   ),
+  Cart: ({ size = 22 }) => (
+    <svg width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
+      <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" />
+    </svg>
+  ),
+  Plus: ({ size = 16 }) => (
+    <svg width={size} height={size} fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" viewBox="0 0 24 24">
+      <line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" />
+    </svg>
+  ),
+  Minus: ({ size = 16 }) => (
+    <svg width={size} height={size} fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" viewBox="0 0 24 24">
+      <line x1="5" y1="12" x2="19" y2="12" />
+    </svg>
+  ),
+  Trash: ({ size = 15 }) => (
+    <svg width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <polyline points="3 6 5 6 21 6" />
+      <path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6" />
+      <path d="M10 11v6" /><path d="M14 11v6" /><path d="M9 6V4h6v2" />
+    </svg>
+  ),
+  ImagePlaceholder: () => (
+    <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <circle cx="8.5" cy="8.5" r="1.5" />
+      <polyline points="21 15 16 10 5 21" />
+    </svg>
+  ),
 };
 
 /* ─── DATA ─── */
 const NAV_LINKS = [
   { label: "Servicios", href: "#servicios" },
-  { label: "Productos", href: "#productos" },
+  { label: "Tienda", href: "#tienda" },
   { label: "Nosotros", href: "#nosotros" },
   { label: "Testimonios", href: "#testimonios" },
   { label: "Contacto", href: "#contacto" },
@@ -125,14 +138,23 @@ const SERVICES = [
   { Ico: Icon.Shield, title: "Precios Transparentes", desc: "Presupuesto claro desde el primer mensaje. Sin costos ocultos, sin sorpresas. Tu confianza es nuestra prioridad." },
 ];
 
-const PRODUCTS = [
-  { Ico: Icon.Candle, name: "Nombre del producto", desc: "Descripción del producto.", tag: "Tipo de vela" },
-  { Ico: Icon.Droplets, name: "Nombre del producto", desc: "Descripción del producto.", tag: "Tipo de vela" },
-  { Ico: Icon.Sparkles, name: "Nombre del producto", desc: "Descripción del producto.", tag: "Tipo de vela" },
-  { Ico: Icon.Leaf, name: "Nombre del producto", desc: "Descripción del producto.", tag: "Tipo de vela" },
-  { Ico: Icon.Droplets, name: "Nombre del producto", desc: "Descripción del producto.", tag: "Tipo de vela" },
-  { Ico: Icon.Gift, name: "Nombre del producto", desc: "Descripción del producto.", tag: "Tipo de vela" },
+/* ─── SHOP CATALOG ─── */
+const SHOP_ITEMS = [
+  { id: 1, name: "Nombre del producto", price: 0, tag: "Tipo de vela", desc: "Descripción del producto.", cat: "Nombre de la categoria" },
+  { id: 2, name: "Nombre del producto", price: 0, tag: "Tipo de vela", desc: "Descripción del producto.", cat: "Nombre de la categoria" },
+  { id: 3, name: "Nombre del producto", price: 0, tag: "Tipo de vela", desc: "Descripción del producto.", cat: "Nombre de la categoria" },
+  { id: 4, name: "Nombre del producto", price: 0, tag: "Tipo de vela", desc: "Descripción del producto.", cat: "Nombre de la categoria" },
+  { id: 5, name: "Nombre del producto", price: 0, tag: "Tipo de vela", desc: "Descripción del producto.", cat: "Nombre de la categoria" },
+  { id: 6, name: "Nombre del producto", price: 0, tag: "Tipo de vela", desc: "Descripción del producto.", cat: "Nombre de la categoria" },
+  { id: 7, name: "Nombre del producto", price: 0, tag: "Tipo de vela", desc: "Descripción del producto.", cat: "Nombre de la categoria" },
+  { id: 8, name: "Nombre del producto", price: 0, tag: "Tipo de vela", desc: "Descripción del producto.", cat: "Nombre de la categoria" },
+  { id: 9, name: "Nombre del producto", price: 0, tag: "Tipo de vela", desc: "Descripción del producto.", cat: "Nombre de la categoria" },
+  { id: 10, name: "Nombre del producto", price: 0, tag: "Tipo de vela", desc: "Descripción del producto.", cat: "Nombre de la categoria" },
+  { id: 11, name: "Nombre del producto", price: 0, tag: "Tipo de vela", desc: "Descripción del producto.", cat: "Bengalas" },
+  { id: 12, name: "Nombre del producto", price: 0, tag: "Tipo de vela", desc: "Descripción del producto.", cat: "Bengalas" },
 ];
+
+const SHOP_CATS = ["Todos", "Bengalas", "Nombre de la categoria", "Nombre de la categoria", "Nombre de la categoria"];
 
 const TESTIMONIALS = [
   { name: "Nombre Apellido", location: "Ciudad", stars: 5, initial: "M", text: "lorem ipsum dolor sit amet consectetur adipiscing elit" },
@@ -148,7 +170,9 @@ const FEATURES = [
   "Packaging de regalo incluido",
 ];
 
-/* ─── SCROLL REVEAL HOOK ─── */
+const fmt = (n) => n === 0 ? "Consultar precio" : `$${n.toLocaleString("es-AR")}`;
+
+/* ─── HOOKS ─── */
 function useReveal() {
   const ref = useRef(null);
   const [v, setV] = useState(false);
@@ -157,7 +181,7 @@ function useReveal() {
     if (!el) return;
     const obs = new IntersectionObserver(
       ([e]) => { if (e.isIntersecting) { setV(true); obs.disconnect(); } },
-      { threshold: 0.1 }
+      { threshold: 0.08 }
     );
     obs.observe(el);
     return () => obs.disconnect();
@@ -168,36 +192,23 @@ function useReveal() {
 function Reveal({ children, delay = 0, style = {}, className = "" }) {
   const [ref, v] = useReveal();
   return (
-    <div
-      ref={ref}
-      className={className}
-      style={{
-        opacity: v ? 1 : 0,
-        transform: v ? "none" : "translateY(28px)",
-        transition: `opacity 0.6s ease ${delay}ms, transform 0.6s ease ${delay}ms`,
-        ...style,
-      }}
-    >
+    <div ref={ref} className={className} style={{ opacity: v ? 1 : 0, transform: v ? "none" : "translateY(28px)", transition: `opacity 0.6s ease ${delay}ms, transform 0.6s ease ${delay}ms`, ...style }}>
       {children}
     </div>
   );
 }
 
-/* ─── SECTION LABEL ─── */
 function SectionLabel({ children, onYellow = true }) {
   const color = onYellow ? C.red : C.yellow;
   return (
     <div style={{ display: "inline-flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
       <div style={{ width: 22, height: 2.5, background: color, borderRadius: 2 }} />
-      <span style={{ fontFamily: "var(--ff-body)", fontSize: 11, letterSpacing: "0.22em", textTransform: "uppercase", color, fontWeight: 700 }}>
-        {children}
-      </span>
+      <span style={{ fontFamily: "var(--ff-body)", fontSize: 11, letterSpacing: "0.22em", textTransform: "uppercase", color, fontWeight: 700 }}>{children}</span>
       <div style={{ width: 22, height: 2.5, background: color, borderRadius: 2 }} />
     </div>
   );
 }
 
-/* ─── STAR ROW ─── */
 function Stars({ n }) {
   return (
     <div style={{ display: "flex", gap: 3 }}>
@@ -206,15 +217,41 @@ function Stars({ n }) {
   );
 }
 
-/* ══════════════════════════════════════════════════════
-   MAIN COMPONENT
-══════════════════════════════════════════════════════ */
+/* ─── PRODUCT IMAGE PLACEHOLDER ─── */
+function ImgPlaceholder({ height = 160 }) {
+  return (
+    <div style={{
+      height,
+      background: C.yellowPale,
+      border: `1px solid ${C.border}`,
+      borderRadius: 10,
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: 8,
+      color: C.muted,
+    }}>
+      <Icon.ImagePlaceholder />
+      <span style={{ fontFamily: "var(--ff-body)", fontSize: 10.5, letterSpacing: ".06em" }}>
+        Imagen del producto
+      </span>
+    </div>
+  );
+}
+
+/* ══════════════════════════════════════════════════════ */
 export default function VelasRichard() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [cart, setCart] = useState([]);      // [{id, name, price, qty}]
+  const [cartOpen, setCartOpen] = useState(false);
+  const [shopCat, setShopCat] = useState("Todos");
+  const [addedId, setAddedId] = useState(null);
 
-  const WA = "https://wa.me/5491122944579";
-  const CATALOG = "https://www.whatsapp.com/catalog/5491122944579/?app_absent=0";
+  const WA_NUM = "5491122944579";
+  const WA = `https://wa.me/${WA_NUM}`;
+  const CATALOG = "https://wa.me/c/107507410309202";
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 56);
@@ -228,6 +265,37 @@ export default function VelasRichard() {
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
   };
 
+  /* ── Cart helpers ── */
+  const cartTotal = cart.reduce((s, i) => s + i.price * i.qty, 0);
+  const cartCount = cart.reduce((s, i) => s + i.qty, 0);
+
+  const addToCart = (item) => {
+    setCart(prev => {
+      const ex = prev.find(i => i.id === item.id);
+      return ex
+        ? prev.map(i => i.id === item.id ? { ...i, qty: i.qty + 1 } : i)
+        : [...prev, { ...item, qty: 1 }];
+    });
+    setAddedId(item.id);
+    setTimeout(() => setAddedId(null), 1200);
+  };
+
+  const updateQty = (id, delta) =>
+    setCart(prev => prev.map(i => i.id === id ? { ...i, qty: Math.max(0, i.qty + delta) } : i).filter(i => i.qty > 0));
+
+  const removeItem = (id) => setCart(prev => prev.filter(i => i.id !== id));
+
+  /* ── Checkout → WhatsApp ── */
+  const checkout = () => {
+    if (!cart.length) return;
+    const lines = cart.map(i => `• ${i.name} x${i.qty}${i.price > 0 ? ` = $${(i.price * i.qty).toLocaleString("es-AR")}` : ""}`).join("\n");
+    const total = cartTotal > 0 ? `\n\n*Total estimado: $${cartTotal.toLocaleString("es-AR")}*` : "";
+    const msg = `¡Hola! Quiero realizar el siguiente pedido:\n\n${lines}${total}\n\n¿Podría confirmar disponibilidad y coordinar el envío? ¡Muchas gracias!`;
+    window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`, "_blank");
+  };
+
+  const filtered = shopCat === "Todos" ? SHOP_ITEMS : SHOP_ITEMS.filter(i => i.cat === shopCat);
+
   return (
     <div style={{ fontFamily: "var(--ff-body)", background: C.yellow, color: C.ink, overflowX: "hidden" }}>
 
@@ -237,154 +305,191 @@ export default function VelasRichard() {
 
         :root {
           --ff-display: 'Cormorant Garamond', Georgia, serif;
-          --ff-body:    'DM Sans', system-ui, sans-serif;
+          --ff-body: 'DM Sans', system-ui, sans-serif;
         }
 
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
 
         h1, h2, h3 { font-family: var(--ff-display); }
-        h1 { font-size: clamp(40px, 5.5vw, 70px); line-height: 1.06; font-weight: 700; }
-        h2 { font-size: clamp(30px, 3.8vw, 50px); line-height: 1.1;  font-weight: 700; }
+        h1 { font-size: clamp(40px,5.5vw,70px); line-height: 1.06; font-weight: 700; }
+        h2 { font-size: clamp(30px,3.8vw,50px); line-height: 1.1; font-weight: 700; }
         h3 { font-size: 21px; font-weight: 600; line-height: 1.3; }
         p  { font-family: var(--ff-body); line-height: 1.74; font-size: 15px; }
 
-        /* Nav links */
-        .nav-a {
-          font-family: var(--ff-body);
-          font-size: 13.5px; font-weight: 600;
-          letter-spacing: .04em;
-          color: ${C.red};
-          text-decoration: none;
-          padding: 4px 0;
-          position: relative;
-          transition: opacity .2s;
-        }
-        .nav-a::after {
-          content: '';
-          position: absolute; bottom: -1px; left: 0;
-          width: 0; height: 2px;
-          background: ${C.red};
-          border-radius: 2px;
-          transition: width .25s;
-        }
+        .nav-a { font-family: var(--ff-body); font-size: 13.5px; font-weight: 600; letter-spacing: .04em; color: ${C.red}; text-decoration: none; padding: 4px 0; position: relative; transition: opacity .2s; }
+        .nav-a::after { content: ''; position: absolute; bottom: -1px; left: 0; width: 0; height: 2px; background: ${C.red}; border-radius: 2px; transition: width .25s; }
         .nav-a:hover { opacity: .75; }
         .nav-a:hover::after { width: 100%; }
 
-        /* Buttons */
-        .btn-red {
-          display: inline-flex; align-items: center; gap: 8px;
-          padding: 13px 28px; border-radius: 8px;
-          background: ${C.red}; color: ${C.yellow};
-          font-family: var(--ff-body); font-weight: 700; font-size: 14px;
-          text-decoration: none; border: none; cursor: pointer;
-          letter-spacing: .03em;
-          transition: background .2s, transform .18s, box-shadow .18s;
-        }
+        .btn-red { display: inline-flex; align-items: center; gap: 8px; padding: 13px 28px; border-radius: 8px; background: ${C.red}; color: ${C.yellow}; font-family: var(--ff-body); font-weight: 700; font-size: 14px; text-decoration: none; border: none; cursor: pointer; letter-spacing: .03em; transition: background .2s, transform .18s, box-shadow .18s; }
         .btn-red:hover { background: ${C.redLight}; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(66,12,10,.3); }
 
-        .btn-outline-red {
-          display: inline-flex; align-items: center; gap: 8px;
-          padding: 12px 28px; border-radius: 8px;
-          background: transparent; color: ${C.red};
-          font-family: var(--ff-body); font-weight: 700; font-size: 14px;
-          text-decoration: none; border: 2px solid ${C.red}; cursor: pointer;
-          letter-spacing: .03em;
-          transition: background .2s, color .2s, transform .18s;
-        }
+        .btn-outline-red { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 8px; background: transparent; color: ${C.red}; font-family: var(--ff-body); font-weight: 700; font-size: 14px; text-decoration: none; border: 2px solid ${C.red}; cursor: pointer; letter-spacing: .03em; transition: background .2s, color .2s, transform .18s; }
         .btn-outline-red:hover { background: ${C.red}; color: ${C.yellow}; transform: translateY(-2px); }
 
-        .btn-wa {
-          display: inline-flex; align-items: center; gap: 8px;
-          padding: 11px 22px; border-radius: 8px;
-          background: #25D366; color: #fff;
-          font-family: var(--ff-body); font-weight: 600; font-size: 13.5px;
-          text-decoration: none; border: none;
-          letter-spacing: .02em;
-          transition: background .2s, transform .18s, box-shadow .18s;
-        }
+        .btn-wa { display: inline-flex; align-items: center; gap: 8px; padding: 11px 22px; border-radius: 8px; background: #25D366; color: #fff; font-family: var(--ff-body); font-weight: 600; font-size: 13.5px; text-decoration: none; border: none; letter-spacing: .02em; transition: background .2s, transform .18s, box-shadow .18s; }
         .btn-wa:hover { background: #1aab56; transform: translateY(-1px); box-shadow: 0 6px 18px rgba(37,211,102,.3); }
 
-        .btn-white {
-          display: inline-flex; align-items: center; gap: 8px;
-          padding: 13px 28px; border-radius: 8px;
-          background: ${C.white}; color: ${C.red};
-          font-family: var(--ff-body); font-weight: 700; font-size: 14px;
-          text-decoration: none; border: none; cursor: pointer;
-          letter-spacing: .03em;
-          transition: transform .18s, box-shadow .18s;
-        }
-        .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(66,12,10,.18); }
+        .card { background: ${C.white}; border: 1.5px solid ${C.border}; border-radius: 14px; transition: transform .25s, box-shadow .25s, border-color .25s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 18px 44px rgba(66,12,10,.14); border-color: ${C.red}; }
 
-        /* Cards */
-        .card {
-          background: ${C.white};
-          border: 1.5px solid ${C.border};
-          border-radius: 14px;
-          transition: transform .25s, box-shadow .25s, border-color .25s;
-        }
-        .card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 18px 44px rgba(66,12,10,.14);
-          border-color: ${C.red};
-        }
+        .shop-card { background: ${C.white}; border: 1.5px solid ${C.border}; border-radius: 14px; display: flex; flex-direction: column; transition: transform .22s, box-shadow .22s, border-color .22s; }
+        .shop-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(66,12,10,.13); border-color: ${C.red}; }
 
-        /* Product tag */
-        .tag {
-          display: inline-block;
-          font-family: var(--ff-body); font-size: 10px; font-weight: 700;
-          letter-spacing: .12em; text-transform: uppercase;
-          padding: 4px 10px; border-radius: 99px;
-          background: ${C.yellow}; color: ${C.red};
-          border: 1.5px solid ${C.red};
-        }
+        .tag { display: inline-block; font-family: var(--ff-body); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 4px 10px; border-radius: 99px; background: ${C.yellow}; color: ${C.red}; border: 1.5px solid ${C.red}; }
 
-        /* Icon box */
-        .icon-box {
-          width: 52px; height: 52px; border-radius: 12px;
-          display: flex; align-items: center; justify-content: center;
-          background: ${C.yellow}; color: ${C.red};
-          border: 1.5px solid ${C.borderStrong};
-          flex-shrink: 0;
-        }
+        .icon-box { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: ${C.yellow}; color: ${C.red}; border: 1.5px solid ${C.borderStrong}; flex-shrink: 0; }
 
-        /* Marquee */
+        .cat-pill { font-family: var(--ff-body); font-size: 12.5px; font-weight: 600; padding: 8px 18px; border-radius: 99px; border: 1.5px solid ${C.red}; background: transparent; color: ${C.red}; cursor: pointer; transition: background .18s, color .18s, transform .15s; white-space: nowrap; }
+        .cat-pill:hover { transform: translateY(-1px); }
+        .cat-pill.active { background: ${C.red}; color: ${C.yellow}; }
+
+        .add-btn { display: flex; align-items: center; justify-content: center; gap: 7px; width: 100%; padding: 11px; border-radius: 8px; background: ${C.yellow}; color: ${C.red}; font-family: var(--ff-body); font-weight: 700; font-size: 13px; border: 2px solid ${C.red}; cursor: pointer; letter-spacing: .03em; transition: background .18s, color .18s, transform .15s; }
+        .add-btn:hover, .add-btn.added { background: ${C.red}; color: ${C.yellow}; }
+
+        .qty-btn { width: 28px; height: 28px; border-radius: 6px; border: 1.5px solid ${C.border}; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; color: ${C.red}; transition: background .15s; }
+        .qty-btn:hover { background: ${C.yellow}; }
+
         .marquee { display: flex; animation: tick 24s linear infinite; width: max-content; }
         @keyframes tick { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-        /* Floating WA button */
-        .wa-fab {
-          position: fixed; bottom: 28px; right: 28px; z-index: 999;
-          width: 56px; height: 56px; border-radius: 50%;
-          background: #25D366; color: #fff;
-          display: flex; align-items: center; justify-content: center;
-          box-shadow: 0 4px 20px rgba(37,211,102,.45);
-          text-decoration: none;
-          transition: transform .2s, box-shadow .2s;
-        }
+        .wa-fab { position: fixed; bottom: 28px; right: 28px; z-index: 199; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,.45); text-decoration: none; transition: transform .2s, box-shadow .2s; }
         .wa-fab:hover { transform: scale(1.1); box-shadow: 0 8px 28px rgba(37,211,102,.55); }
-        .wa-fab::before {
-          content: ''; position: absolute; inset: 0; border-radius: 50%;
-          background: #25D366;
-          animation: ring 2.8s ease-out infinite; opacity: 0;
-        }
-        @keyframes ring {
-          0%   { transform: scale(1); opacity: .6; }
-          100% { transform: scale(1.8); opacity: 0; }
-        }
+        .wa-fab::before { content: ''; position: absolute; inset: 0; border-radius: 50%; background: #25D366; animation: ring 2.8s ease-out infinite; opacity: 0; }
+        @keyframes ring { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(1.8); opacity: 0; } }
 
-        /* Responsive helpers */
         @media (max-width: 768px) {
           .hide-mob { display: none !important; }
           .show-mob { display: flex !important; }
-          .g2       { grid-template-columns: 1fr !important; }
-          .g3       { grid-template-columns: 1fr !important; }
+          .g2 { grid-template-columns: 1fr !important; }
+          .g3 { grid-template-columns: 1fr !important; }
+          .g4 { grid-template-columns: repeat(2,1fr) !important; }
         }
         @media (min-width: 769px) { .show-mob { display: none !important; } }
         @media (max-width: 920px) and (min-width: 580px) {
           .g3 { grid-template-columns: repeat(2,1fr) !important; }
+          .g4 { grid-template-columns: repeat(2,1fr) !important; }
         }
       `}</style>
+
+      {/* ══ CART DRAWER ══ */}
+      {cartOpen && (
+        <>
+          {/* Overlay */}
+          <div
+            onClick={() => setCartOpen(false)}
+            style={{ position: "fixed", inset: 0, background: "rgba(26,6,3,.45)", zIndex: 200, backdropFilter: "blur(3px)" }}
+          />
+
+          {/* Drawer */}
+          <div style={{ position: "fixed", top: 0, right: 0, height: "100%", width: "min(420px,100vw)", background: C.white, zIndex: 201, display: "flex", flexDirection: "column", boxShadow: "-8px 0 40px rgba(66,12,10,.18)" }}>
+
+            {/* Drawer header */}
+            <div style={{ padding: "20px 24px", background: C.red, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <Icon.Cart size={22} />
+                <span style={{ fontFamily: "var(--ff-display)", fontSize: 22, fontWeight: 700, color: C.yellow }}>Tu carrito</span>
+                {cartCount > 0 && (
+                  <span style={{ background: C.yellow, color: C.red, borderRadius: 99, padding: "2px 9px", fontFamily: "var(--ff-body)", fontSize: 12, fontWeight: 700 }}>
+                    {cartCount}
+                  </span>
+                )}
+              </div>
+              <button
+                onClick={() => setCartOpen(false)}
+                style={{ background: "rgba(254,195,41,.15)", border: "none", borderRadius: 8, padding: 8, cursor: "pointer", color: C.yellow, display: "flex" }}
+              >
+                <Icon.Close />
+              </button>
+            </div>
+
+            {/* Drawer items */}
+            <div style={{ flex: 1, overflowY: "auto", padding: "16px 20px", display: "flex", flexDirection: "column", gap: 12 }}>
+              {cart.length === 0 ? (
+                <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 14, padding: "60px 0" }}>
+                  <div style={{ width: 64, height: 64, borderRadius: 16, background: C.yellowPale, display: "flex", alignItems: "center", justifyContent: "center", border: `1.5px solid ${C.border}`, color: C.muted }}>
+                    <Icon.Cart size={28} />
+                  </div>
+                  <p style={{ color: C.muted, textAlign: "center", fontSize: 15 }}>
+                    Tu carrito está vacío.<br />¡Agregá productos de la tienda!
+                  </p>
+                  <button
+                    onClick={() => { setCartOpen(false); document.querySelector("#tienda")?.scrollIntoView({ behavior: "smooth" }); }}
+                    className="btn-red"
+                    style={{ fontSize: 13, padding: "10px 22px" }}
+                  >
+                    Ver tienda
+                  </button>
+                </div>
+              ) : (
+                cart.map(item => (
+                  <div key={item.id} style={{ display: "flex", gap: 12, alignItems: "flex-start", background: C.yellowPale, borderRadius: 10, padding: "12px 14px", border: `1px solid ${C.border}` }}>
+                    {/* Thumbnail placeholder */}
+                    <div style={{ width: 52, height: 52, borderRadius: 8, background: C.border, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, color: C.muted }}>
+                      <Icon.ImagePlaceholder />
+                    </div>
+
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontFamily: "var(--ff-body)", fontSize: 13.5, fontWeight: 600, color: C.red, marginBottom: 4, lineHeight: 1.3 }}>
+                        {item.name}
+                      </div>
+                      {item.price > 0 && (
+                        <div style={{ fontFamily: "var(--ff-body)", fontSize: 13, color: C.muted, marginBottom: 8 }}>
+                          ${item.price.toLocaleString("es-AR")} c/u
+                        </div>
+                      )}
+                      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                          <button className="qty-btn" onClick={() => updateQty(item.id, -1)}><Icon.Minus size={13} /></button>
+                          <span style={{ fontFamily: "var(--ff-body)", fontSize: 14, fontWeight: 700, color: C.red, minWidth: 20, textAlign: "center" }}>{item.qty}</span>
+                          <button className="qty-btn" onClick={() => updateQty(item.id, +1)}><Icon.Plus size={13} /></button>
+                        </div>
+                        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                          {item.price > 0 && (
+                            <span style={{ fontFamily: "var(--ff-body)", fontSize: 14, fontWeight: 700, color: C.red }}>
+                              ${(item.price * item.qty).toLocaleString("es-AR")}
+                            </span>
+                          )}
+                          <button
+                            onClick={() => removeItem(item.id)}
+                            style={{ background: "none", border: "none", cursor: "pointer", color: "#bbb", display: "flex", transition: "color .2s" }}
+                            onMouseEnter={e => e.currentTarget.style.color = C.red}
+                            onMouseLeave={e => e.currentTarget.style.color = "#bbb"}
+                          >
+                            <Icon.Trash size={15} />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+
+            {/* Drawer footer */}
+            {cart.length > 0 && (
+              <div style={{ padding: "20px 24px", borderTop: `1.5px solid ${C.border}`, background: C.yellowPale }}>
+                {cartTotal > 0 && (
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+                    <span style={{ fontFamily: "var(--ff-body)", fontSize: 14, fontWeight: 600, color: C.muted }}>Total estimado</span>
+                    <span style={{ fontFamily: "var(--ff-display)", fontSize: 28, fontWeight: 700, color: C.red }}>
+                      ${cartTotal.toLocaleString("es-AR")}
+                    </span>
+                  </div>
+                )}
+                <button onClick={checkout} className="btn-wa" style={{ width: "100%", justifyContent: "center", padding: "14px", fontSize: 15, fontWeight: 700, borderRadius: 10, cursor: "pointer" }}>
+                  <Icon.Whatsapp size={20} />
+                  Pedir por WhatsApp
+                </button>
+                <p style={{ fontSize: 11.5, color: C.muted, textAlign: "center", marginTop: 10, lineHeight: 1.5 }}>
+                  Se abrirá WhatsApp con tu pedido listo para enviar.
+                </p>
+              </div>
+            )}
+          </div>
+        </>
+      )}
 
       {/* ══ NAVBAR ══ */}
       <header style={{
@@ -400,7 +505,7 @@ export default function VelasRichard() {
           {/* Logo */}
           <a href="#inicio" onClick={e => go(e, "#inicio")} style={{ display: "flex", alignItems: "center", gap: 14, textDecoration: "none" }}>
             <div style={{ width: 60, height: 60, borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
-              <img src={logo} alt="Logo" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <img src={logo} alt="Logo Velas Richard" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </div>
             <div style={{ display: "flex", flexDirection: "column" }}>
               <span style={{ fontFamily: "var(--ff-display)", fontSize: 22, fontWeight: 700, color: C.red, lineHeight: 1.1 }}>Velas Richard</span>
@@ -409,27 +514,54 @@ export default function VelasRichard() {
           </a>
 
           {/* Desktop nav */}
-          <nav className="hide-mob" style={{ display: "flex", alignItems: "center", gap: 32 }}>
+          <nav className="hide-mob" style={{ display: "flex", alignItems: "center", gap: 28 }}>
             {NAV_LINKS.map(l => (
               <a key={l.href} href={l.href} className="nav-a" onClick={e => go(e, l.href)}>{l.label}</a>
             ))}
           </nav>
 
-          {/* WA button */}
-          <div className="hide-mob">
+          {/* Desktop right buttons */}
+          <div className="hide-mob" style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <button
+              onClick={() => setCartOpen(true)}
+              style={{ position: "relative", background: C.red, border: "none", borderRadius: 8, padding: "9px 16px", cursor: "pointer", color: C.yellow, display: "flex", alignItems: "center", gap: 7, fontFamily: "var(--ff-body)", fontSize: 13.5, fontWeight: 700, transition: "background .2s" }}
+              onMouseEnter={e => e.currentTarget.style.background = C.redLight}
+              onMouseLeave={e => e.currentTarget.style.background = C.red}
+            >
+              <Icon.Cart size={18} />
+              Carrito
+              {cartCount > 0 && (
+                <span style={{ background: C.yellow, color: C.red, borderRadius: 99, padding: "1px 7px", fontSize: 11, fontWeight: 800, marginLeft: 2 }}>
+                  {cartCount}
+                </span>
+              )}
+            </button>
             <a href={WA} target="_blank" rel="noopener noreferrer" className="btn-wa">
-              <Icon.Whatsapp size={16} />
-              Consultá ahora
+              <Icon.Whatsapp size={16} /> Consultá ahora
             </a>
           </div>
 
-          {/* Hamburger */}
-          <button onClick={() => setMenuOpen(!menuOpen)} className="show-mob"
-            style={{ background: "none", border: "none", cursor: "pointer", color: C.red, padding: 4 }}
-            aria-label="Menú"
-          >
-            {menuOpen ? <Icon.Close /> : <Icon.Menu />}
-          </button>
+          {/* Mobile right */}
+          <div className="show-mob" style={{ alignItems: "center", gap: 8 }}>
+            <button
+              onClick={() => setCartOpen(true)}
+              style={{ position: "relative", background: C.red, border: "none", borderRadius: 8, padding: "8px 12px", cursor: "pointer", color: C.yellow, display: "flex", alignItems: "center" }}
+            >
+              <Icon.Cart size={20} />
+              {cartCount > 0 && (
+                <span style={{ position: "absolute", top: -6, right: -6, background: C.yellow, color: C.red, borderRadius: 99, width: 18, height: 18, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 800, border: `2px solid ${C.yellow}` }}>
+                  {cartCount}
+                </span>
+              )}
+            </button>
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              style={{ background: "none", border: "none", cursor: "pointer", color: C.red, padding: 4, display: "flex" }}
+              aria-label="Menú"
+            >
+              {menuOpen ? <Icon.Close /> : <Icon.Menu />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile menu */}
@@ -447,11 +579,7 @@ export default function VelasRichard() {
 
       {/* ══ HERO ══ */}
       <section id="inicio" style={{ paddingTop: 84, minHeight: "100vh", display: "flex", alignItems: "center", background: C.yellow, position: "relative", overflow: "hidden" }}>
-
-        {/* Decorative right panel */}
         <div style={{ position: "absolute", top: 0, right: 0, width: "44%", height: "100%", background: C.red, clipPath: "polygon(12% 0,100% 0,100% 100%,0% 100%)", zIndex: 0 }} />
-
-        {/* Decorative circles on red panel */}
         <div style={{ position: "absolute", top: 80, right: 40, width: 300, height: 300, borderRadius: "50%", border: "1.5px solid rgba(254,195,41,.2)", zIndex: 1, pointerEvents: "none" }} />
         <div style={{ position: "absolute", top: 155, right: 115, width: 150, height: 150, borderRadius: "50%", border: "1.5px solid rgba(254,195,41,.15)", zIndex: 1, pointerEvents: "none" }} />
 
@@ -461,11 +589,7 @@ export default function VelasRichard() {
             {/* Left copy */}
             <div>
               <Reveal>
-                <div style={{
-                  display: "inline-flex", alignItems: "center", gap: 8,
-                  background: "rgba(66,12,10,.1)", borderRadius: 99,
-                  padding: "6px 14px 6px 6px", marginBottom: 24,
-                }}>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(66,12,10,.1)", borderRadius: 99, padding: "6px 14px 6px 6px", marginBottom: 24 }}>
                   <div style={{ width: 28, height: 28, borderRadius: "50%", background: C.red, display: "flex", alignItems: "center", justifyContent: "center", color: C.yellow }}>
                     <Icon.Sparkles size={14} />
                   </div>
@@ -477,8 +601,8 @@ export default function VelasRichard() {
 
               <Reveal delay={80}>
                 <h1 style={{ color: C.red }}>
-                  Iluminando <br />
-                  <em style={{ color: C.red, fontStyle: "italic" }}>momentos</em> únicos
+                  Iluminando<br />
+                  <em>momentos</em> únicos
                 </h1>
               </Reveal>
 
@@ -494,11 +618,11 @@ export default function VelasRichard() {
 
               <Reveal delay={300}>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 52 }}>
-                  <a href={WA} target="_blank" rel="noopener noreferrer" className="btn-red">
-                    <Icon.Whatsapp size={17} /> Pedí ahora
+                  <a href="#tienda" onClick={e => go(e, "#tienda")} className="btn-red">
+                    <Icon.Cart size={17} /> Ver tienda
                   </a>
-                  <a href={CATALOG} target="_blank" rel="noopener noreferrer" className="btn-outline-red">
-                    Ver catálogo <Icon.ArrowRight size={14} />
+                  <a href={WA} target="_blank" rel="noopener noreferrer" className="btn-outline-red">
+                    <Icon.Whatsapp size={16} /> Consultanos
                   </a>
                 </div>
               </Reveal>
@@ -515,40 +639,19 @@ export default function VelasRichard() {
               </Reveal>
             </div>
 
-            {/* Right visual (on red bg) */}
+            {/* Right card */}
             <Reveal delay={180} style={{ display: "flex", justifyContent: "center" }}>
               <div style={{ position: "relative", height: 460, width: 320 }}>
-
-                {/* Card */}
-                <div style={{
-                  width: 290, height: 360, borderRadius: 20,
-                  background: C.yellow,
-                  border: `2px solid rgba(254,195,41,.4)`,
-                  boxShadow: "0 24px 60px rgba(0,0,0,.3)",
-                  display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
-                  position: "relative", zIndex: 2,
-                }}>
-                  <div style={{ fontSize: 88, marginBottom: 18, lineHeight: 1 }}>🕯️</div>
+                <div style={{ width: 290, height: 360, borderRadius: 20, background: C.yellow, border: "2px solid rgba(254,195,41,.4)", boxShadow: "0 24px 60px rgba(0,0,0,.3)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", zIndex: 2, overflow: "hidden" }}>
+                  {/* Logo as hero card image */}
+                  <img src={logo} alt="Velas Richard" style={{ width: 140, height: 140, objectFit: "contain", marginBottom: 16 }} />
                   <div style={{ fontFamily: "var(--ff-display)", fontSize: 24, fontWeight: 700, color: C.red, marginBottom: 6 }}>Velas Richard</div>
                   <div style={{ fontFamily: "var(--ff-body)", fontSize: 11.5, color: C.muted, letterSpacing: ".16em", textTransform: "uppercase" }}>Artesanal · Premium</div>
-                  {/* Badge */}
-                  <div style={{
-                    position: "absolute", top: -14, right: 18,
-                    background: C.red, borderRadius: 99, padding: "7px 14px",
-                    fontFamily: "var(--ff-body)", fontSize: 11, fontWeight: 700, color: C.yellow,
-                    boxShadow: "0 4px 14px rgba(66,12,10,.4)", letterSpacing: ".08em",
-                  }}>
+                  <div style={{ position: "absolute", top: -14, right: 18, background: C.red, borderRadius: 99, padding: "7px 14px", fontFamily: "var(--ff-body)", fontSize: 11, fontWeight: 700, color: C.yellow, boxShadow: "0 4px 14px rgba(66,12,10,.4)", letterSpacing: ".08em" }}>
                     ★ 5.0 Google
                   </div>
                 </div>
-
-                {/* Info chip */}
-                <div style={{
-                  position: "absolute", bottom: 48, left: -24,
-                  background: C.red, borderRadius: 12, padding: "12px 16px",
-                  boxShadow: "0 8px 24px rgba(0,0,0,.25)",
-                  display: "flex", alignItems: "center", gap: 10, zIndex: 3,
-                }}>
+                <div style={{ position: "absolute", bottom: 48, left: -24, background: C.red, borderRadius: 12, padding: "12px 16px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", display: "flex", alignItems: "center", gap: 10, zIndex: 3 }}>
                   <div style={{ width: 36, height: 36, borderRadius: 8, background: C.yellow, display: "flex", alignItems: "center", justifyContent: "center", color: C.red }}>
                     <Icon.Package size={18} />
                   </div>
@@ -569,7 +672,7 @@ export default function VelasRichard() {
           {Array.from({ length: 2 }).flatMap(() =>
             ["Velas de cumpleaños", "Momentos Únicos", "Eventos", "Envíos a Todo el País", "Calidad Premium", "Personalización Total", "Fabricación Artesanal"].map((t, i) => (
               <span key={`${t}${i}`} style={{ fontFamily: "var(--ff-body)", fontSize: 11.5, fontWeight: 600, letterSpacing: ".2em", textTransform: "uppercase", color: C.yellow, margin: "0 28px", whiteSpace: "nowrap" }}>
-                <span style={{ color: C.yellow, marginRight: 10, opacity: .6 }}>✦</span>{t}
+                <span style={{ opacity: .6, marginRight: 10 }}>✦</span>{t}
               </span>
             ))
           )}
@@ -580,17 +683,12 @@ export default function VelasRichard() {
       <section id="servicios" style={{ padding: "96px 0", background: C.yellow }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "0 24px" }}>
           <Reveal style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <SectionLabel onYellow>Por qué elegirnos</SectionLabel>
-            </div>
-            <h2 style={{ color: C.red, marginTop: 8 }}>
-              Expertos en cada <em>detalle</em>
-            </h2>
+            <div style={{ display: "flex", justifyContent: "center" }}><SectionLabel onYellow>Por qué elegirnos</SectionLabel></div>
+            <h2 style={{ color: C.red, marginTop: 8 }}>Expertos en cada <em>detalle</em></h2>
             <p style={{ maxWidth: 520, margin: "14px auto 0", color: C.muted }}>
               Nos especializamos cada día para ofrecerte velas de la más alta calidad. Tu momento especial merece lo mejor.
             </p>
           </Reveal>
-
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 22 }} className="g3">
             {SERVICES.map((s, i) => (
               <Reveal key={s.title} delay={i * 110}>
@@ -605,49 +703,105 @@ export default function VelasRichard() {
         </div>
       </section>
 
-      {/* ══ PRODUCTOS ══ */}
-      <section id="productos" style={{ padding: "96px 0", background: C.white }}>
+      {/* ══ TIENDA ══ */}
+      <section id="tienda" style={{ padding: "96px 0", background: C.white }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "0 24px" }}>
-          <Reveal style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <SectionLabel onYellow={false}>Catálogo</SectionLabel>
-            </div>
-            <h2 style={{ color: C.red, marginTop: 8 }}>
-              Nuestros <em>productos</em>
-            </h2>
-            <p style={{ maxWidth: 480, margin: "14px auto 0", color: "#5a4020" }}>
-              Cada vela es una obra artesanal única, elaborada con materiales premium para garantizar la mejor experiencia.
+
+          <Reveal style={{ textAlign: "center", marginBottom: 48 }}>
+            <div style={{ display: "flex", justifyContent: "center" }}><SectionLabel onYellow={false}>Tienda Online</SectionLabel></div>
+            <h2 style={{ color: C.red, marginTop: 8 }}>Comprá nuestros <em>productos</em></h2>
+            <p style={{ maxWidth: 500, margin: "14px auto 0", color: "#5a4020" }}>
+              Elegí tus velas favoritas, agregalas al carrito y coordiná tu pedido directo por WhatsApp. ¡Rápido y sencillo!
             </p>
           </Reveal>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }} className="g3">
-            {PRODUCTS.map((p, i) => (
-              <Reveal key={p.name} delay={i * 70}>
-                <div className="card" style={{ padding: "28px 24px", height: "100%", display: "flex", flexDirection: "column" }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
-                    <div className="icon-box" style={{ width: 48, height: 48, borderRadius: 10 }}><p.Ico size={22} /></div>
-                    <span className="tag">{p.tag}</span>
+          {/* Steps banner */}
+          <Reveal style={{ marginBottom: 48 }}>
+            <div style={{ background: C.yellow, borderRadius: 16, padding: "28px 24px", border: `1.5px solid ${C.borderStrong}`, display: "flex", alignItems: "center", justifyContent: "center", flexWrap: "wrap", gap: 8 }}>
+              {[
+                { n: "1", text: "Elegí tus velas" },
+                { n: "2", text: "Agregalas al carrito" },
+                { n: "3", text: "Presioná Pedir por WhatsApp" },
+                { n: "4", text: "Confirmamos y enviamos" },
+              ].map((s, i) => (
+                <div key={s.n} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8, padding: "0 20px" }}>
+                    <div style={{ width: 44, height: 44, borderRadius: "50%", background: C.red, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--ff-display)", fontSize: 22, fontWeight: 700, color: C.yellow }}>
+                      {s.n}
+                    </div>
+                    <div style={{ fontFamily: "var(--ff-body)", fontSize: 12.5, fontWeight: 600, color: C.red, textAlign: "center", maxWidth: 110 }}>
+                      {s.text}
+                    </div>
                   </div>
-                  <h3 style={{ color: C.red, fontSize: 19, marginBottom: 8 }}>{p.name}</h3>
-                  <p style={{ fontSize: 13.5, lineHeight: 1.68, color: "#5a4020", flex: 1, marginBottom: 20 }}>{p.desc}</p>
-                  <a
-                    href={WA} target="_blank" rel="noopener noreferrer"
-                    style={{ display: "inline-flex", alignItems: "center", gap: 6, fontFamily: "var(--ff-body)", fontSize: 13, fontWeight: 700, color: C.red, textDecoration: "none", transition: "gap .2s" }}
-                    onMouseEnter={e => e.currentTarget.style.gap = "10px"}
-                    onMouseLeave={e => e.currentTarget.style.gap = "6px"}
-                  >
-                    Consultar precio <Icon.ArrowRight size={13} />
-                  </a>
+                  {i < 3 && <div style={{ width: 24, height: 2, background: C.borderStrong, borderRadius: 2, flexShrink: 0 }} />}
                 </div>
-              </Reveal>
-            ))}
+              ))}
+            </div>
+          </Reveal>
+
+          {/* Category filter */}
+          <Reveal style={{ marginBottom: 36 }}>
+            <div style={{ display: "flex", gap: 10, flexWrap: "wrap", justifyContent: "center" }}>
+              {SHOP_CATS.map(cat => (
+                <button key={cat} className={`cat-pill${shopCat === cat ? " active" : ""}`} onClick={() => setShopCat(cat)}>
+                  {cat}
+                </button>
+              ))}
+            </div>
+          </Reveal>
+
+          {/* Product grid */}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 18 }} className="g4">
+            {filtered.map((item, i) => {
+              const inCart = cart.find(c => c.id === item.id);
+              const isAdded = addedId === item.id;
+              return (
+                <Reveal key={item.id} delay={i * 50}>
+                  <div className="shop-card">
+                    {/* Image placeholder */}
+                    <div style={{ padding: "14px 14px 0" }}>
+                      <ImgPlaceholder height={150} />
+                    </div>
+
+                    <div style={{ padding: "14px 16px 16px", display: "flex", flexDirection: "column", flex: 1 }}>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
+                        <span className="tag">{item.tag}</span>
+                        {inCart && (
+                          <span style={{ fontFamily: "var(--ff-body)", fontSize: 11, fontWeight: 700, color: "#25D366", background: "rgba(37,211,102,.1)", padding: "3px 8px", borderRadius: 99, border: "1px solid rgba(37,211,102,.3)" }}>
+                            En carrito ×{inCart.qty}
+                          </span>
+                        )}
+                      </div>
+                      <h3 style={{ color: C.red, fontSize: 15.5, marginBottom: 6, lineHeight: 1.3 }}>{item.name}</h3>
+                      <p style={{ fontSize: 12.5, color: "#5a4020", lineHeight: 1.6, marginBottom: 12, flex: 1 }}>{item.desc}</p>
+                      <div style={{ marginBottom: 12 }}>
+                        <span style={{ fontFamily: "var(--ff-display)", fontSize: item.price > 0 ? 22 : 14, fontWeight: 700, color: C.red }}>
+                          {fmt(item.price)}
+                        </span>
+                      </div>
+                      <button className={`add-btn${isAdded ? " added" : ""}`} onClick={() => addToCart(item)}>
+                        {isAdded
+                          ? <><Icon.Check size={14} /> ¡Agregado!</>
+                          : <><Icon.Plus size={14} /> Agregar al carrito</>
+                        }
+                      </button>
+                    </div>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
 
-          <Reveal style={{ textAlign: "center", marginTop: 48 }}>
-            <a href={CATALOG} target="_blank" rel="noopener noreferrer" className="btn-red">
-              <Icon.Package size={17} /> Ver catálogo completo en WhatsApp
-            </a>
-          </Reveal>
+          {/* View cart CTA (when cart has items) */}
+          {cartCount > 0 && (
+            <Reveal style={{ textAlign: "center", marginTop: 48 }}>
+              <button onClick={() => setCartOpen(true)} className="btn-red" style={{ fontSize: 15, padding: "14px 32px" }}>
+                <Icon.Cart size={20} />
+                Ver carrito ({cartCount} {cartCount === 1 ? "producto" : "productos"})
+                {cartTotal > 0 && ` — $${cartTotal.toLocaleString("es-AR")}`}
+              </button>
+            </Reveal>
+          )}
         </div>
       </section>
 
@@ -656,32 +810,19 @@ export default function VelasRichard() {
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "0 24px" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }} className="g2">
 
-            {/* Visual */}
             <Reveal>
               <div style={{ position: "relative" }}>
-                {/* Main block */}
-                <div style={{
-                  width: "90%", borderRadius: 20, overflow: "hidden",
-                  background: C.red, position: "relative",
-                  padding: "52px 40px", minHeight: 400,
-                  display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
-                }}>
-                  <div style={{ fontSize: 72, marginBottom: 24 }}>🕯️</div>
+                <div style={{ width: "90%", borderRadius: 20, overflow: "hidden", background: C.red, position: "relative", padding: "52px 40px", minHeight: 400, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+                  <div style={{ width: 80, height: 80, borderRadius: 16, background: "rgba(254,195,41,.15)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 24, flexShrink: 0, color: C.yellow }}>
+                    <Icon.Medal size={38} />
+                  </div>
                   <blockquote style={{ fontFamily: "var(--ff-display)", fontSize: 21, fontStyle: "italic", color: C.yellow, textAlign: "center", lineHeight: 1.55 }}>
                     "lorem ipsum dolor sit amet consectetur adipiscing elit"
                   </blockquote>
                   <div style={{ width: 40, height: 3, background: C.yellow, marginTop: 24, borderRadius: 2, opacity: .6 }} />
-                  {/* corner accent */}
                   <div style={{ position: "absolute", top: 0, right: 0, width: 72, height: 72, background: C.yellow, borderBottomLeftRadius: 72, opacity: .15 }} />
                 </div>
-
-                {/* Chip */}
-                <div style={{
-                  position: "absolute", bottom: -18, right: -18,
-                  background: C.red, borderRadius: 14, padding: "14px 18px",
-                  boxShadow: "0 10px 30px rgba(66,12,10,.25)",
-                  display: "flex", alignItems: "center", gap: 12,
-                }}>
+                <div style={{ position: "absolute", bottom: -18, right: -18, background: C.red, borderRadius: 14, padding: "14px 18px", boxShadow: "0 10px 30px rgba(66,12,10,.25)", display: "flex", alignItems: "center", gap: 12 }}>
                   <div style={{ width: 42, height: 42, borderRadius: 10, background: C.yellow, display: "flex", alignItems: "center", justifyContent: "center", color: C.red }}>
                     <Icon.Medal size={22} />
                   </div>
@@ -693,7 +834,6 @@ export default function VelasRichard() {
               </div>
             </Reveal>
 
-            {/* Text */}
             <Reveal delay={160}>
               <div style={{ display: "flex", justifyContent: "flex-start" }}>
                 <SectionLabel onYellow>Nuestra historia</SectionLabel>
@@ -726,28 +866,17 @@ export default function VelasRichard() {
       <section id="testimonios" style={{ padding: "96px 0", background: C.white }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "0 24px" }}>
           <Reveal style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <SectionLabel onYellow={false}>Testimonios</SectionLabel>
-            </div>
-            <h2 style={{ color: C.red, marginTop: 8 }}>
-              Lo que dicen nuestros <em>clientes</em>
-            </h2>
+            <div style={{ display: "flex", justifyContent: "center" }}><SectionLabel onYellow={false}>Testimonios</SectionLabel></div>
+            <h2 style={{ color: C.red, marginTop: 8 }}>Lo que dicen nuestros <em>clientes</em></h2>
           </Reveal>
-
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 22, maxWidth: 900, margin: "0 auto" }} className="g2">
             {TESTIMONIALS.map((t, i) => (
-              <Reveal key={t.name} delay={i * 130}>
+              <Reveal key={t.name + i} delay={i * 130}>
                 <div className="card" style={{ padding: "32px 28px" }}>
                   <Stars n={t.stars} />
                   <p style={{ fontSize: 15, fontStyle: "italic", margin: "18px 0 22px", color: "#3a2010", lineHeight: 1.76 }}>"{t.text}"</p>
                   <div style={{ display: "flex", alignItems: "center", gap: 12, paddingTop: 18, borderTop: `1.5px solid ${C.border}` }}>
-                    <div style={{
-                      width: 44, height: 44, borderRadius: "50%",
-                      background: C.red,
-                      display: "flex", alignItems: "center", justifyContent: "center",
-                      fontFamily: "var(--ff-display)", fontSize: 18, fontWeight: 700, color: C.yellow,
-                      flexShrink: 0,
-                    }}>
+                    <div style={{ width: 44, height: 44, borderRadius: "50%", background: C.red, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--ff-display)", fontSize: 18, fontWeight: 700, color: C.yellow, flexShrink: 0 }}>
                       {t.initial}
                     </div>
                     <div>
@@ -759,10 +888,8 @@ export default function VelasRichard() {
               </Reveal>
             ))}
           </div>
-
           <Reveal style={{ textAlign: "center", marginTop: 32 }}>
-            <a href="https://www.google.com/search?q=velas+richard" target="_blank" rel="noopener noreferrer"
-              style={{ fontFamily: "var(--ff-body)", fontSize: 14, fontWeight: 700, color: C.red, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6 }}>
+            <a href="https://www.google.com/search?q=velas+richard" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--ff-body)", fontSize: 14, fontWeight: 700, color: C.red, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6 }}>
               Ver todas las reseñas en Google <Icon.ArrowRight size={14} />
             </a>
           </Reveal>
@@ -773,20 +900,13 @@ export default function VelasRichard() {
       <section id="contacto" style={{ padding: "96px 0", background: C.yellow }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "0 24px" }}>
           <Reveal style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <SectionLabel onYellow>Contacto</SectionLabel>
-            </div>
-            <h2 style={{ color: C.red, marginTop: 8 }}>
-              Consultá todas tus <em>dudas</em>
-            </h2>
+            <div style={{ display: "flex", justifyContent: "center" }}><SectionLabel onYellow>Contacto</SectionLabel></div>
+            <h2 style={{ color: C.red, marginTop: 8 }}>Consultá todas tus <em>dudas</em></h2>
             <p style={{ maxWidth: 460, margin: "14px auto 0", color: C.muted }}>
               Estamos para ayudarte. Escribinos y te respondemos a la brevedad con atención personalizada.
             </p>
           </Reveal>
-
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 22, maxWidth: 820, margin: "0 auto" }} className="g2">
-
-            {/* WA card */}
             <Reveal>
               <div className="card" style={{ padding: "40px 32px", textAlign: "center" }}>
                 <div style={{ width: 64, height: 64, borderRadius: 16, background: "rgba(37,211,102,.12)", color: "#25D366", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px", border: "1.5px solid rgba(37,211,102,.3)" }}>
@@ -801,7 +921,6 @@ export default function VelasRichard() {
               </div>
             </Reveal>
 
-            {/* Catalog card */}
             <Reveal delay={140}>
               <div className="card" style={{ padding: "40px 32px", textAlign: "center" }}>
                 <div className="icon-box" style={{ width: 64, height: 64, borderRadius: 16, margin: "0 auto 20px" }}>
@@ -819,16 +938,12 @@ export default function VelasRichard() {
         </div>
       </section>
 
-      {/* ══ REDES SOCIALES ══ */}
+      {/* ══ REDES ══ */}
       <section style={{ background: C.red, padding: "72px 0" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "0 24px", textAlign: "center" }}>
           <Reveal>
-            <div style={{ display: "flex", justifyContent: "center", marginBottom: 8 }}>
-              <SectionLabel onYellow={false}>Seguinos</SectionLabel>
-            </div>
-            <h2 style={{ color: C.yellow, marginBottom: 12 }}>
-              Encontranos en <em>redes sociales</em>
-            </h2>
+            <div style={{ display: "flex", justifyContent: "center", marginBottom: 8 }}><SectionLabel onYellow={false}>Seguinos</SectionLabel></div>
+            <h2 style={{ color: C.yellow, marginBottom: 12 }}>Encontranos en <em>redes sociales</em></h2>
             <p style={{ color: "rgba(254,195,41,.75)", maxWidth: 440, margin: "0 auto 36px" }}>
               Seguí nuestra cuenta para inspiración diaria, novedades y promociones exclusivas.
             </p>
@@ -855,10 +970,9 @@ export default function VelasRichard() {
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "0 24px" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr 1fr", gap: 48, marginBottom: 48 }} className="g3">
 
-            {/* Brand */}
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 18 }}>
-                <div style={{ width: 52, height: 52, borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
+                <div style={{ width: 52, height: 52, borderRadius: 12, overflow: "hidden", flexShrink: 0 }}>
                   <img src={logo} alt="Logo" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                 </div>
                 <div>
@@ -871,13 +985,11 @@ export default function VelasRichard() {
               </p>
             </div>
 
-            {/* Nav */}
             <div>
               <div style={{ fontFamily: "var(--ff-body)", fontSize: 11, letterSpacing: ".18em", textTransform: "uppercase", color: C.yellow, fontWeight: 700, marginBottom: 18 }}>Navegación</div>
               <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 {NAV_LINKS.map(l => (
-                  <a key={l.href} href={l.href}
-                    style={{ fontFamily: "var(--ff-body)", fontSize: 14, color: "rgba(254,195,41,.5)", textDecoration: "none", transition: "color .2s" }}
+                  <a key={l.href} href={l.href} style={{ fontFamily: "var(--ff-body)", fontSize: 14, color: "rgba(254,195,41,.5)", textDecoration: "none", transition: "color .2s" }}
                     onMouseEnter={e => e.currentTarget.style.color = C.yellow}
                     onMouseLeave={e => e.currentTarget.style.color = "rgba(254,195,41,.5)"}
                   >{l.label}</a>
@@ -885,7 +997,6 @@ export default function VelasRichard() {
               </div>
             </div>
 
-            {/* Contact */}
             <div>
               <div style={{ fontFamily: "var(--ff-body)", fontSize: 11, letterSpacing: ".18em", textTransform: "uppercase", color: C.yellow, fontWeight: 700, marginBottom: 18 }}>Contacto</div>
               <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
